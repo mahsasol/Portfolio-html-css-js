@@ -21,7 +21,7 @@
     --bg-color:#081b29;
     --main-color:#00abf0;
     --text-color:#333;
-    --second-text-color:#fff;
+    --second-text-color:#555;
     --white-color:#fff;
     --cover-color: linear-gradient(45deg ,#00abf0, #006e9a);
     --pages-color:linear-gradient(90deg,#fff,#ddd);
@@ -159,6 +159,7 @@ body{
     right: 0;
     transform-style: preserve-3d;
 }
+
 .book-page .page-front,
 .book-page .page-back{
     position: absolute;
@@ -208,4 +209,20 @@ body{
     bottom: 1.2rem;
     left: 50%;
     transform: translateX(-50%);
+}
+.nextpre-btn{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 1.5rem;
+    bottom: .9rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--second-text-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.nextpre-btn:hover{
+    color: var(--main-color);
 }
