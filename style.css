@@ -158,8 +158,11 @@ body{
     position: absolute;
     right: 0;
     transform-style: preserve-3d;
+    transform-origin: left;
 }
-
+.book-page.page-right.turn{
+    transform: rotateY(-180deg);
+}
 .book-page .page-front,
 .book-page .page-back{
     position: absolute;
@@ -225,4 +228,7 @@ body{
 }
 .nextpre-btn:hover{
     color: var(--main-color);
+}
+.nextpre-btn.back{
+    left: 1.5rem;
 }
