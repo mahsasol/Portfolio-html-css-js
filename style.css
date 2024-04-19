@@ -1,4 +1,13 @@
-
+@font-face{
+    font-family: graphic;
+    font-weight: 200;
+    src: url(../media/Graphik\ Arabic\ Medium.otf);
+}
+@font-face {
+    font-family: graphic;
+    font-weight: 500;
+    src: url(../media/Graphik\ Arabic\ Bold.otf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -79,4 +88,68 @@ body{
     border-radius: 50%;
     border: .25rem solid var(--main-color);
     margin-bottom: .8rem;
+}
+.profile-page h1{
+    font-size: 2.4rem;
+    line-height: 1;
+}
+.profile-page h3{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.profile-page .social-media{
+    margin: .6rem 0 .8rem;
+}
+.profile-page .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: var(--border);
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 0 .2rem;
+    font-size: 1.3rem;
+}
+.profile-page .social-media a:hover{
+    background: var(--main-color);
+    color: var(--white-color);
+}
+.profile-page p{
+    text-align: justify;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    width: 9.5rem;
+    height: 3rem;
+    background: var(--main-color);
+    border: var(--border);
+    border-radius: .3rem;
+    font-size: 1rem;
+    color: var(--white-color);
+    font-family: graphic;
+    font-weight: 200;
+    margin: 0 1rem;
+    padding: .7rem;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color: var(--main-color);
+}
+.profile-page .btn-box{
+    margin-top: 1.2rem;
+
+}
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: var(--main-color);
+}
+.btn-box .btn:nth-child(2):hover{
+    background: var(--main-color);
+    color: var(--white-color);
 }
