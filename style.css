@@ -41,6 +41,17 @@ body{
     width: 65rem;
     height: 44rem;
     padding: 2rem;
+    animation: show-animate 2s forwards;
+}
+@keyframes show-animate {
+    0%,30%{
+        opacity: 0;
+        transform :rotate(-20deg);
+    }
+    100%{
+        opacity : 1;
+        transform :rotate (0deg)
+    }
 }
 .cover{
     position: absolute;
@@ -59,6 +70,9 @@ body{
 }
 .cover.cover-left{
     z-index: -1;
+}
+.cover.cover-right{
+    z-index: 100;
 }
 
 .book{

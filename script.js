@@ -66,3 +66,5 @@ backProfileBtn.onclick =() => {
         } , (index +1 ) *200 +100)
     })
 }
+
+// opening animation
